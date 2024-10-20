@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner {
+    text-align: center;
+}
+.banner img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+}
+.content {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    width: 80%;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+}
+.content h2 {
+    color: #f39c12;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.content ul li {
+    padding: 5px 0;
+}
+.content ul li:before {
+    content: "•";
+    color: #f39c12;
+    padding-right: 8px;
+}
+.home-icon {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+.home-icon:hover {
+    background-color: #e67e22;
+}
+.copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* BẢN MOBILEEEE */
+
+
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    h2 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-icon {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+}

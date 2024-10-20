@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+}
+
+#clickMeButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+#skillContainer {
+    padding: 20px;
+    border: 2px solid #444;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    transition: box-shadow 0.3s;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skill-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    margin: 5px;
+}
+
+
+.skill-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+
+
+#skillInfoContainer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #fff;
+    width: 500px;
+    text-align: left;
+    display: none;
+}
+
+.home-icon {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-icon:hover {
+    background-color: #2980b9;
+}
+
+.home-icon i {
+    margin-right: 8px;
+}
+
+
+/* MOBILEEEEEE */
+
+@media (max-width: 768px) {
+    #skillContainer {
+        width: 90%; 
+    }
+
+    .skill-items {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+    }
+
+    .skill-logo {
+        width: 100px; 
+        height: 100px;
+    }
+
+    #skillInfoContainer {
+        width: 90%; 
+    }
+
+    #clickMeButton {
+        width: 80%; 
+        margin: 10px 0; 
+    }
+
+    .home-icon {
+        width: 80%; 
+        text-align: left;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-logo {
+        width: 80px; 
+        height: 80px;
+    }
+
+    #clickMeButton, .home-icon {
+        font-size: 14px; 
+    }
+}
